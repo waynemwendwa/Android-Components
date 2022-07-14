@@ -50,14 +50,14 @@
             android:id="@+id/radioFemale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="28dp"
+            android:layout_marginRight="30dp"
             android:text="Female" />
 
         <RadioButton
             android:id="@+id/radioMale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="28dp"
+            android:layout_marginRight="30dp"
             android:text="Male" />
 
         <RadioButton

@@ -56,12 +56,16 @@ class MainActivity : AppCompatActivity() {
         }
 
         groupGender.setOnCheckedChangeListener { _, id ->
-            if(id == R.id.radioFemale){
-                Toast.makeText(this,"I am female",Toast.LENGTH_SHORT).show()
-            }else if(id == R.id.radioMale){
-                Toast.makeText(this,"I am male",Toast.LENGTH_SHORT).show()
-            }else if (id == R.id.radioOther){
-                Toast.makeText(this,"I am not user about my gender",Toast.LENGTH_SHORT).show()
+            when (id) {
+                R.id.radioFemale -> {
+                    Toast.makeText(this,"I am female",Toast.LENGTH_SHORT).show()
+                }
+                R.id.radioMale -> {
+                    Toast.makeText(this,"I am male",Toast.LENGTH_SHORT).show()
+                }
+                R.id.radioOther -> {
+                    Toast.makeText(this,"I am not user about my gender",Toast.LENGTH_SHORT).show()
+                }
             }
         }
     }
